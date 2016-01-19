@@ -9,11 +9,13 @@ myApp.controller("Controller1", function($scope, $http){
     $scope.phones = result.data;
   });
     $scope.message = 'Chào mừng các bạn đến với freetuts.net';
+
 });
 
-myApp.controller("Controller2", function($scope){
-    $scope.message = 'Học lập trình online freetuts.net';
+myApp.controller("PhoneController",function($scope,$http){
+  $scope.persion = {firstname: 'Join', lastname : 'Doe'}
 });
+
 
 /*var express = require('express');
 var app = express();
